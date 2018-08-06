@@ -1,9 +1,7 @@
-from django.core.management.base import BaseCommand, CommandError
-
 import wave
 import array
 
-class Command(BaseCommand):
+def Audiomix():
     w1 = wave.open("path/to/audiofile1.wav")
     w2 = wave.open("path/to/audiofile2.wav")
 
