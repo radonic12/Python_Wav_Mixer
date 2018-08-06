@@ -1,9 +1,9 @@
 import wave
 import array
 
-def Audiomix():
-    w1 = wave.open("path/to/audiofile1.wav")
-    w2 = wave.open("path/to/audiofile2.wav")
+def Audiomix(path1,path2):
+    w1 = wave.open(path1)
+    w2 = wave.open(path2)
 
     #get samples formatted as a string.
     samples1 = w1.readframes(w1.getnframes())
